@@ -54,7 +54,7 @@
 
     "files":
         [
-        {"includePattern": "target/domain-dto-1.0.jar", "excludePattern": "target/.*.zip$", "uploadPattern": "/$1"}
+        {"includePattern": "target/(.*)", "excludePattern": "target/.*.zip$", "uploadPattern": "/$1"}
         ],
     "publish": true
 }
