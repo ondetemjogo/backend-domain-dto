@@ -4,7 +4,7 @@
        fields are mandatory. */
 
     "package": {
-        "name": "com.ondetemjogo", // Bintray package name
+        "name": "com/ondetemjogo", // Bintray package name
         "repo": "ondetemjogo/backend-domain-dto", // Bintray repository name
         "subject": "altitdb", // Bintray subject (user or organization)
         "desc": "I was pushed completely automatically",
