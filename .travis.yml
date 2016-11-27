@@ -4,7 +4,7 @@ language: java
 jdk:
 - oraclejdk8
 script:
-- mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent deploy sonar:sonar -Dsonar.login=$SONAR_TOKEN -s settings.xml
+- mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent -s settings.xml deploy sonar:sonar -Dsonar.login=$SONAR_TOKEN
 cache:
   directories:
   - "$HOME/.m2/repository"
