@@ -5,7 +5,7 @@
 
     "package": {
         "name": "com.ondetemjogo", // Bintray package name
-        "repo": "maven", // Bintray repository name
+        "repo": "ondetemjogo/backend-domain-dto", // Bintray repository name
         "subject": "altitdb", // Bintray subject (user or organization)
         "desc": "I was pushed completely automatically",
         "website_url": "www.jfrog.com",
@@ -29,7 +29,7 @@
         "name": "1.0",
         "desc": "This is a version",
         "released": "2016-11-27",
-        "vcs_tag": "0.5",
+        "vcs_tag": "1.0",
         "attributes": [{"name": "VerAtt1", "values" : ["VerVal1"], "type": "string"},
                        {"name": "VerAtt2", "values" : [1, 3.3, 5], "type": "number"},
                        {"name": "VerAtt3", "values" : ["2015-01-01T19:43:37+0100"], "type": "date"}],
