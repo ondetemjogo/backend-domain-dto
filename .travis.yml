@@ -4,7 +4,12 @@ language: java
 jdk:
 - oraclejdk8
 script:
-- mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent -s settings.xml deploy sonar:sonar -Dsonar.login=$SONAR_TOKEN
+- mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.login=$SONAR_TOKEN
+deploy:
+  provider: bintray
+  file: "descriptor.json"
+  user: "altitdb"
+  key: "2LVk3Kwt4Z9woA6ZPHQ5VLMrGvKN9uUNKx+MZZ2H0qf0r0Gi7+jVyGei+agemOwBA51TZZA7XRzhoEQz9Tv47XOA1Dh5mU7JnhYnNYRotVHUHplN6w8TJCSFVvtFlAswzO8rypWFCHcOjUmkAkl0sVnLcXokyLHwLZobOeUJbNHQLvlTOTHIXEVn/nXseGVszQ81SS91cfH/Lh/an88Id1NSItbebdCli43JqrW2kmk696T4DIkbDz4A7izYV8bB4oBCOzLDmdJ8/Hk523i+M7ZUlpSRnMz6C9fXkjwXW7CyRrEZGS8PFYE6OjRMY8yam5PmwrVCWpe7JMzN/dHE8Q4fTutb3rbrNthjc2MfN+b6OVwBpE/6GReB9aoC5b/kdFhthBLastllmM1IrCzdPZ0qzEtrYjOEH9aG1zNqKghmBW9C2pvQb85/lTYXJOGcFOJMv1fKJM3VK+oiVLJLUyDoxmAVIL+Jkk+yGvZ6Wjd0HxefYsagzdL2Y+Kmk44Z5BWlC0I4Y4UlWjtOxCEqAo0f6xxTpURe6/+QbVRda2iL6lGeCfbJtDgLlJtZPiwcKEhNFEDbsU1OciSxuvvJw6anCY3zNX0ZiaUR+nrCLwyaT2j9LHqGpH5UiPdWtE4SGS8uWUCno5IRC/CYouoakC3YdmxXFPen1qdvQZPnCU8="
 cache:
   directories:
   - "$HOME/.m2/repository"

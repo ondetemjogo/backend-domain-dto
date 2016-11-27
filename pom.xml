@@ -29,7 +29,7 @@
 		<repository>
 			<id>bintray-altitdb-ondetemjogo</id>
 			<name>altitdb-ondetemjogo</name>
-			<url>https://api.bintray.com/maven/altitdb/ondetemjogo/com.ondetemjogo/;publish=1</url>
+			<url>https://api.bintray.com/maven/altitdb/ondetemjogo/repo/com.ondetemjogo/;publish=1</url>
 		</repository>
 	</distributionManagement>
 
