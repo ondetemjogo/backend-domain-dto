@@ -1,12 +1,8 @@
 {
-    /* Bintray package information.
-       In case the package already exists on Bintray, only the name, repo and subject
-       fields are mandatory. */
-
     "package": {
-        "name": "com.ondetemjogo", // Bintray package name
-        "repo": "ondetemjogo", // Bintray repository name
-        "subject": "altitdb", // Bintray subject (user or organization)
+        "name": "com.ondetemjogo",
+        "repo": "ondetemjogo",
+        "subject": "altitdb",
         "desc": "I was pushed completely automatically",
         "website_url": "www.jfrog.com",
         "issue_tracker_url": "https://github.com/bintray/bintray-client-java/issues",
@@ -21,10 +17,6 @@
                        {"name": "att2", "values" : [1, 2.2, 4], "type": "number"},
                        {"name": "att5", "values" : ["2014-12-28T19:43:37+0100"], "type": "date"}]
     },
-
-    /* Package version information.
-       In case the version already exists on Bintray, only the name fields is mandatory. */
-
     "version": {
         "name": "1.0",
         "desc": "This is a version",
