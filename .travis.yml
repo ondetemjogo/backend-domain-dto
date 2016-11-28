@@ -4,13 +4,7 @@ language: java
 jdk:
 - oraclejdk8
 script:
-- mvn clean install
-deploy:
-  provider: bintray
-  file: descriptor.json
-  user: altitdb
-  key:
-    secure: 1KXYHeRsBlLaLnKuecARTut6lmvbQvejeYj1PSF91KPHStZThUPTAgIMp8pMWfxqLc8Ua8TUEmKLIe/S+63FQjK7WzZUWP49TC93idSXRnI1H5I0Dr464Xr4OnUJIFsQC/FPD5xnezrwWEPPEoInEbDW3EzVrej1CX4THVFSTWM41ltevVOtLlbR5pOyITiTwcw5BrFSEX2O7azjTVYbYqjbAzByueYPfvK267eqrAndr/IBwb3qCg1/eTSLBw4GhqYSpBvB5IdSAoC0hJXe0APLJVzm585jT63uBu/Olym7oIha6KNBB2F53WskYNTK7T4EWxY+9ZwZQqE6555GpU0njLqA5gsPRR9NolWAKAFM5U3SRXGU6m+pBDMkEe2+tQZ/bsMfLr373zSC5m2S6czKtW0B2oe9vOhHSqqMsudfTzRZd5n/ofKQHYsnGu30VpDVSbrtpP6X4T9gI+KweWCRjUVupTbA5Ccq45/1m1tHg/wPIk6vcvtmUpthxNTN2fF6iVzPHjn3k0l0Ft1Cnpq6JHYfVVurdxsnT7+v0h417qbtvAQWKuvf+DqQl5rlap8vnLlDS0kX5vuUDwu2WeDWFjMCAyICx9KZKJwKm7SWK64ad6hRIC0QV0q2aQwL0O+HThNqDMdeta/NFRxWbNmDJPf9KdosVqIJOcyjjzY=
+- mvn clean deploy
 cache:
   directories:
   - "$HOME/.m2/repository"
