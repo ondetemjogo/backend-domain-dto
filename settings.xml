@@ -1,0 +1,51 @@
+ <?xml version='1.0' encoding='UTF-8'?>
+ <settings xsi:schemaLocation='http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd' xmlns='http://maven.apache.org/SETTINGS/1.0.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+ <profiles>
+	<profile>
+		<repositories>
+			<repository>
+				<snapshots>
+					<enabled>false</enabled>
+				</snapshots>
+				<id>bintray-altitdb-ondetemjogo</id>
+				<name>bintray</name>
+				<url>http://dl.bintray.com/altitdb/ondetemjogo</url>
+			</repository>
+			<repository>
+				<snapshots>
+					<enabled>true</enabled>
+				</snapshots>
+				<id>oss-jfrog-artifactory-snapshots</id>
+				<name>oss-jfrog</name>
+				<url>https://oss.jfrog.org/list/oss-snapshot-local</url>
+			</repository>
+		</repositories>
+		<pluginRepositories>
+			<pluginRepository>
+				<snapshots>
+					<enabled>false</enabled>
+				</snapshots>
+				<id>bintray-altitdb-ondetemjogo</id>
+				<name>bintray-plugins</name>
+				<url>http://dl.bintray.com/altitdb/ondetemjogo</url>
+			</pluginRepository>
+		</pluginRepositories>
+		<id>bintray</id>
+	</profile>
+</profiles>
+<activeProfiles>
+	<activeProfile>bintray</activeProfile>
+</activeProfiles>
+ <servers>
+	<server>
+		<id>bintray-altitdb-ondetemjogo</id>
+		<username>${env.CI_DEPLOY_USERNAME}</username>
+		<password>${env.CI_DEPLOY_PASSWORD}</password>
+	</server>
+	<server>
+		<id>oss-jfrog-artifactory-snapshots</id>
+		<username>${env.CI_DEPLOY_USERNAME}</username>
+		<password>${env.CI_DEPLOY_PASSWORD}</password>
+	</server>
+ </servers>
+ </settings>
